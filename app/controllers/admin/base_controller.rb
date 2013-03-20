@@ -4,5 +4,9 @@
 module Admin
   class BaseController < ActionController::Base
 
+    include ::Refinery::ApplicationController
+    helper :application
+    include ::Refinery::Pages::Admin::InstanceMethods
+
   end
 end

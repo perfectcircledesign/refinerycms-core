@@ -145,11 +145,6 @@ module Refinery
         end
       end
 
-      initializer 'set will_paginate link labels' do |app|
-        WillPaginate::ViewHelpers.pagination_options[:previous_label] = "&laquo;".html_safe
-        WillPaginate::ViewHelpers.pagination_options[:next_label] = "&raquo;".html_safe
-      end
-
       initializer 'ensure devise is initialised' do |app|
         unless Rails.root.join('config', 'initializers', 'devise.rb').file?
           load Refinery.roots('core').join(*%w(lib generators templates config initializers devise.rb))
