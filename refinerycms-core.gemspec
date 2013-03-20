@@ -171,7 +171,6 @@ Gem::Specification.new do |s|
     'lib/refinery/plugins.rb',
     'lib/refinerycms-core.rb',
     'lib/tasks',
-    'lib/tasks/doc.rake',
     'lib/tasks/refinery.rake',
     'lib/tasks/yard.rake',
     'license.md',
